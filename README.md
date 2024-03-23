@@ -1,1 +1,1 @@
-# toDo-list
+# js-webpack-template
