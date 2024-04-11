@@ -3,25 +3,104 @@
   <head>
     <meta charset="utf-8" />
     <title>ToDo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <div class="page">
-      <div class="todo-container">
-          <h1>Todo List <img src="" alt="Logo"></h1>
 
-          <div class="todo-input">
-              <label for="input"></label>
-              <input type="text" id="input" placeholder="Add new task">
-              <button type="button" class="btn">Add</button>
+      <div class="aside-container">
+        <h2>To-Do App</h2>
+
+        <div class="btn-container">
+          <a href="!#" id="btnAsideMenu">
+            <span>Add Task</span>
+            <div class="img"></div>
+          </a>
+      </div>
+
+        <nav>
+          <div class="nav-menu">
+            <a class="selected" href="!#">Dashboard</a>
+            <a href="!#">All tasks</a>
+            <a href="!#">Active</a>
+            <a href="!#">Completed</a>
           </div>
+        </nav>
+      </div>
 
-          <ul class="task-list">
-              <!-- Todo items will be dynamically added here -->
-              <!-- <li class="checked">Task 1</li>
-              <li>Task 2</li>
-              <li>Task 3</li> -->
-          </ul>
+      <div class="main-container">
 
+
+        <header>
+          <div class="container">
+            <h2>Dashboard</h2>
+            <a class="btn" href="!#">Sign out</a>
+          </div>
+        </header>
+
+        <main>
+          <div class="container">
+
+            <div class="top-part">
+              <div class="inside">
+                <div class="left-col">
+                  <div class="inside">
+                    <h1>Hello, Beautiful Human!</h1>
+                    <img src="" alt="Avatar">
+                    <p>What do you want to do today?</p>
+                  </div>
+                </div>
+                <div class="right-col">
+                  <div class="image"></div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="bottom-part">
+
+              <div class="todo-container">
+
+                <div class="title">
+                  <span>Today’s Tasks</span>
+                  <button class="btn" type="button">Delete All</button>
+                </div>
+    
+                <div class="todo-input">
+                    <label for="input">
+                      <input type="text" id="input" placeholder="Add new task">
+                    </label>
+                    <button type="button" class="btn">Add</button>
+                </div>
+
+                <ul class="task-list">
+                  <li><span class="img"></span>Task 1</li>
+                  <li><span class="img"></span>Task 2</li>
+                  <li><span class="img"></span>Task 3</li>
+                  <li><span class="img"></span>Task 4</li>
+                  <li><span class="img"></span>Task 5</li>
+                </ul>
+              </div>
+
+              <div class="progress-container">
+                <div class="title">
+                  <input id="date" type="date" />
+                  <label for="date"></label>
+                </div>
+
+                <div class="progress-line">
+                  <div class="completed"></div>
+                  <div class="active"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </main>
       </div>
   </div>
 
